@@ -1,78 +1,28 @@
 
+# Test Results
 
-\# Test Results
+## Environment
 
+- Python version: 3.13.7
+- Virtual environment: `.venv`
+- Test framework: pytest
 
-
-\## Environment
-
-
-
-\- Python version: 3.13.7
-
-\- Virtual environment: `.venv`
-
-\- Test framework: pytest
-
-
-
-\## Automated Tests
-
-
+## Automated Tests
 
 Command:
 
+`pytest -q`
 
+Result: `4 passed in 0.02s`
 
-```bash
-
-pytest -q
-
-```
-
-
-
-Result:
-
-
-
-```text
-
-4 passed
-
-```
-
-
-
-\## Application Smoke Test
-
-
+## Application Smoke Test
 
 Command:
 
-
-
-```bash
-
-python -m assistant "where is the IT helpdesk?"
-
-```
-
-
+`python -m assistant "where is the IT helpdesk?"`
 
 Expected output:
 
-
-
-```text
-
-IT Helpdesk: room E.005, open Mon-Fri 08:00-17:00.
-
-```
-
-
+`IT Helpdesk: room E.005, open Mon-Fri 08:00-17:00.`
 
 The application started successfully and returned the expected helpdesk information.
-
-
-
